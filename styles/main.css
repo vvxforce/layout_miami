@@ -125,9 +125,17 @@ p {
   border-radius: 10px;
   text-decoration: none;
   color: white; }
-  .nav__item__active, .nav__item:hover {
+  .nav__item:hover {
+    color: #d5c5aa; }
+  .nav__item__active {
+    color: #000;
     background-color: #d5c5aa;
-    color: black; }
+    border-radius: 10px;
+    padding: 7px 20px;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s; }
+    .nav__item__active:hover {
+      color: #2f80ed; }
 
 @media screen and (max-width: 999px) {
   .nav__list {
@@ -560,6 +568,7 @@ p {
   .contact__form {
     width: 380px; }
   .contact__link {
+    text-decoration: none;
     font-size: 24px;
     line-height: 36px;
     color: black; }
